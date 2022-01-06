@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  font-family: Work Sans, sans-serif;
+  height: 20%;
+}
+
+header h1 {
+  font-size: 5vw;
+  margin: 0;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+#form {
+  margin: 2rem auto;
+  width: 40%;
+  margin-bottom: 0;
+
+  /*make flexbox for form for responsive*/
+  display: flex;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#responseField h2 {
+  margin: 0;
+}
+
+#form > * {
+  margin-bottom: 1rem;
+}
+
+select {
+  appearance: none;
+  display: block;
+  margin: auto;
+  width: 100%;
+  min-height: 3rem;
+  font-family: Work Sans, sans-serif;
+  font-size: 1rem;
+  border: 1.8px black solid;
+  outline: none;
+}
+
+option {
+  text-align: center;
+}
+
+#location {
+  width: 100%;
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5vw;
+  font-size: 2vw;
+  font-family: Work Sans, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#display_options {
+  width: 100%;
+}
+
+#location input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  min-height: 3rem;
+  font-family: Work Sans, sans-serif;
+  font-size: 1rem;
+  border: 1.8px black solid;
+  box-sizing: border-box; /* prevent overflow*/
+}
+
+::placeholder {
+  color: black;
+  opacity: 60%;
+}
+
+#responseField {
+  width: 100%;
+  display: block;
+}
+
+#responseField > * {
+  margin-bottom: 1.2rem;
+}
+
+.request {
+  width: 100%;
+  display: block;
+}
+
+button {
+  width: 100%;
+  margin: 5% 0;
+  min-height: 3rem;
+  background-color: #0cbaba;
+  color: #fff;
+  align-self: center;
+  display: block;
+  font-family: Work Sans, sans-serif;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  /* opacity: 0.6; */
+  cursor: pointer;
+  background-color: #34f0f0;
+}
+
+#weatherChart {
+  display: block;
+  margin: 0 auto;
+  min-height: 40rem;
+  max-width: 60vw;
+  height: auto;
+}
+
+@media screen and (min-width: 2000px) {
+  h2 {
+    font-size: 2vw;
+    margin: 1vw 0;
+  }
+
+  select,
+  #location input,
+  button {
+    min-height: 4rem;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 8vw;
+  }
+
+  #form {
+    width: 60%;
+    height: 65%;
+  }
+
+  button {
+    margin: 5% 0;
+    font-size: 4vw;
+    min-height: 6rem;
+  }
+
+  h2 {
+    font-size: 5vw;
+    margin: 3.5vw 0;
+  }
+
+  select,
+  #location input {
+    min-height: 6rem;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-height: 600px) {
+  header h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 2vw;
+    margin: 1vw 0;
+  }
+
+  select,
+  #location input,
+  button {
+    min-height: 3rem;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-height: 1000px) {
+  header h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+    margin: 3vw 0;
+  }
+
+  select,
+  #location input,
+  button {
+    min-height: 4rem;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header h1 {
+    font-size: 13vw;
+  }
+
+  select,
+  #location input,
+  button {
+    min-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+    margin: 2.5vw 0;
+  }
+
+  select,
+  #location input,
+  button {
+    min-height: 3.5rem;
+    font-size: 5vw;
+  }
+
+  #weatherChart {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+    margin: 3vw 0;
+  }
+
+  select,
+  #location input,
+  button {
+    font-size: 5vw;
+    min-height: 3rem;
+  }
+}

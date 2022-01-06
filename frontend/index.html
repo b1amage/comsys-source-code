@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather station</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:200,500|Roboto:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/helperFunctions.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" defer></script>
+    <script src="scripts/chart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="pagename">Weather station</h1>
+    </header>
+
+    <form id="form">
+        <h2>
+            <label for="methods">Measure the</label>
+        </h2>
+
+        <select name="methods" id="methods" onchange="clearText()">
+            <option value="temp">Temperature</option>
+            <option value="humid">Humidity</option>
+            <option value="pressure">Pressure</option>
+        </select>
+
+        <h2>
+            <label for="options">at</label>
+        </h2>
+
+        <select name="options" id="options" onchange="showAndHideElement(this); clearText()">
+            <option value="surrounding">Surrounding areas</option>
+            <option value="specific">A specific location</option>
+        </select>
+
+        <div id="location">
+            <h2>Choose a location:</h2>
+            <input required type="text" value="" placeholder="Type in a location">
+        </div>
+
+        <div class="request">
+            <button id="command" type="button">Send request</button>
+        </div>
+
+        <div class="request">
+            <button id="chart" type="button">Get chart</button>
+        </div>
+
+        <div id="responseField">
+        </div>
+    </form>
+
+    <div id="chartField">
+    </div>
+</body>
+</html>
