@@ -1,0 +1,6 @@
+[
+  { "temp": "23", "humid": "77", "pressure": "944", "date": "8/1/2022" },
+  { "temp": "26", "humid": "81", "pressure": "1002", "date": "9/1/2022" },
+  { "temp": "24", "humid": "72", "pressure": "979", "date": "10/1/2022" },
+  { "temp": "27", "humid": "89", "pressure": "1097", "date": "11/1/2022" }
+]

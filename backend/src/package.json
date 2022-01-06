@@ -1,0 +1,27 @@
+{
+  "name": "server-raspberry-pi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3877698/server-raspberry-pi.git"
+  },
+  "author": "Quoc Bao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s3877698/server-raspberry-pi/issues"
+  },
+  "homepage": "https://github.com/s3877698/server-raspberry-pi#readme",
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
