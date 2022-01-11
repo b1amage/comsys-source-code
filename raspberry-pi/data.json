@@ -1,0 +1,20 @@
+[
+    {
+        "datetime": "12/23/2021, 12:08:38",
+        "temperature": 45,
+        "pressure": 2111,
+        "humidity": 40
+    },
+    {
+        "datetime": "12/23/2021, 12:08:43",
+        "temperature": 45,
+        "pressure": 2111,
+        "humidity": 40
+    },
+    {
+        "datetime": "12/23/2021, 12:08:50",
+        "temperature": 45,
+        "pressure": 2111,
+        "humidity": 40
+    }
+]
